@@ -6,7 +6,7 @@ Networks;
 
 %AOA(Network,way,Max_iter,solutions_no,N_caps,N_DGs,pf,cap_min,cap_max,DG_min,DG_max,caps_limit,DGs_limit)
 %Network =IEEE_34 or EDN
-Network=EDN;
+Network=IEEE_34;
 %way= 1 for Total_PLoss or 2 for TVD
 way=1;
 %Max_iter= maximum Number of iterations
@@ -14,9 +14,9 @@ Max_iter=50;
 %solutions_no=Number of particles
 solutions_no=50;
 %N_caps=0,1,2,....
-N_caps=2;
+N_caps=3;
 %N_DGs=0,1,2,.....
-N_DGs=3;
+N_DGs=0;
 %pf= power factor for each DG
 pf=.9;
 %cap_min= minimum limit for each capcitor

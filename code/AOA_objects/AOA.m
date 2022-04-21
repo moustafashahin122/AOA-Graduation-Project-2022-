@@ -23,6 +23,9 @@ u=.9;  l=.1;                                               %paramter in Eq. (12)
 %==========================================================================
 % Initial population and Initialization
 %==========================================================================
+%create the population
+% for each device there are two objects: one for the bus and the other for
+% the capacity
 
 solutions{solutions_no,2*N_caps+2*N_DGs}=objecte(2,3);
 for i=1:solutions_no
@@ -47,10 +50,14 @@ for i=1:solutions_no
         solutions{i,j} =result(Nb);
     end
 end
+
+%==========================================================================
+% evaluate the solutions 
+%==========================================================================
+fitness;
 %==========================================================================
 % get the best solution (best_obj) of the solutions
 %==========================================================================
-fitness;
 if way==1
     [min_p, best]=min(p_for_each_solution_for_one_iteration);
     for kk=1:(2*N_caps+2*N_DGs+1)
@@ -112,14 +119,18 @@ for t=1:Max_iter
         maxe(ww)=max(acc_temp(:,ww));
         mine(ww)=min(acc_temp(:,ww));        
     end
-
+%==========================================================================
+% calculate acc_norm for each object
+%==========================================================================
     for r2=1:solutions_no
         for rr2=1:(2*N_caps+2*N_DGs)
             %eq 12
             solutions{r2,rr2}.acc_norm=(u*(solutions{r2,rr2}.acc_temp-mine(rr2)))/(maxe(rr2)-mine(rr2))+l;
         end
     end
-
+%==========================================================================
+% update position
+%==========================================================================
     
     for v3=1:solutions_no
         for vv3=1:(2*N_caps+2*N_DGs)
@@ -152,12 +163,18 @@ for t=1:Max_iter
     
     
     
-    
+%==========================================================================
+% evaluate the solutions 
+%==========================================================================
     
     fitness;
     
     
-    
+%==========================================================================
+% at the end of each iteration
+%update the best solution if it is better than the previous
+%build the convergence array 
+%==========================================================================    
     if way==1            
         [min_p, best]=min(p_for_each_solution_for_one_iteration);
         if (best_obj{2*N_caps+2*N_DGs+1}.Total_PLoss>solutions{best,2*N_caps+2*N_DGs+1}.Total_PLoss)
