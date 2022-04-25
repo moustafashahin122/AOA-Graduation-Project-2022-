@@ -43,6 +43,7 @@ v_network=Network.voltages;
   V_max= max(V_bus)
   Total_PLoss
   Total_QLoss
+  TVD
   over_all_power_factor
 figure(1)
 plot([1:Nb], V_bus.',[1:Nb],v_network.','r')
