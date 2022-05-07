@@ -2,6 +2,7 @@
 function AOA(Network,way,Max_iter,solutions_no,N_caps,N_DGs,pf,cap_min,cap_max,DG_min,DG_max,caps_limit,DGs_limit)
 %==========================================================================
 % rand('seed',0)
+%mustafa
 %==========================================================================
 %                 Archimedes optimization algorithm (AOA)
 %==========================================================================
