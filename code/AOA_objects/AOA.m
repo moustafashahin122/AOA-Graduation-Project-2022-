@@ -200,14 +200,19 @@ for t=1:Max_iter
     end
         
         %draw position for location 1
-        figure(3)
+       
         for cc=1:solutions_no
             beest(cc)=solutions{best,1}.x;
         end
-        plot(1:solutions_no,position_location_1,'*',1:solutions_no,beest)
+         figure(3)
+         if TF<.55
+        plot(1:solutions_no,position_location_1,'*r',1:solutions_no,beest)
         axis([0,solutions_no,0,Nb])
-        
-    end
+         else
+        plot(1:solutions_no,position_location_1,'*b',1:solutions_no,beest)
+        axis([0,solutions_no,0,Nb])
+         end
+end
     
     
     final_result
