@@ -8,7 +8,7 @@ Networks;
 %Network =IEEE_34 or EDN
 Network=IEEE_34;
 %way= 1 for Total_PLoss or 2 for TVD
-way=1;
+way=2;
 %Max_iter= maximum Number of iterations
 Max_iter=50;
 %solutions_no=Number of particles
