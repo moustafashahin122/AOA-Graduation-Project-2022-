@@ -828,7 +828,7 @@ for i=1:34;
     y(i)=.95;
 end
 figure(1)
-plot(x,case_0,'-or',x,case_1_v,'-b^',x,case_2_v,'-m^',x,case_3_v,'-^g',x,case_4_v,'-^',x,case_5_v,'-^',x,y,'k--')
+plot(x,case_0,'-or',x,case_1_v,'-b*',x,case_2_v,'-m^',x,case_3_v,'-^g',x,case_4_v,'-^',x,case_5_v,'-^',x,y,'k--')
 legend('case 0','case 1','case 2','case 3','case 4','case 5','minimum voltage')
 title('34 Bus')
 xlabel('Bus')
