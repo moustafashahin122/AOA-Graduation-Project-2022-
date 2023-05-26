@@ -22,7 +22,7 @@ The simulation results show that the proposed procedure can find the optimal sol
 - `Networks`: creating objects for the networks we are testing the procedure on.
 
 # Usage
-
+you can run this code using any matlab version above "matlab 2007"
 ## first step
 
 to run the procedure first you need to create a network object of the network you want to optimize in the "Network.m" file
