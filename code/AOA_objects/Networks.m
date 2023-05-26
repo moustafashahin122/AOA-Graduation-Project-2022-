@@ -221,5 +221,5 @@ size_EDN=size(voltages_EDN);
 Nb_EDN=size_EDN(1);
 %==========================================================================
 
-IEEE_34=Network(lines_34,loads_34,voltages_34,Nb_34,1);
-EDN=Network(lines_EDN,loads_EDN,voltages_EDN,Nb_EDN,2);
+IEEE_34=Network(lines_34,loads_34,voltages_34,Nb_34);
+EDN=Network(lines_EDN,loads_EDN,voltages_EDN,Nb_EDN);

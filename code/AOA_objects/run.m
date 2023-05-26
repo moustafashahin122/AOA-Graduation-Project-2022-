@@ -5,7 +5,7 @@ Networks;
 
 
 %AOA(Network,way,Max_iter,solutions_no,N_caps,N_DGs,pf,cap_min,cap_max,DG_min,DG_max,caps_limit,DGs_limit)
-%Network =IEEE_34 or EDN
+%Network =IEEE_34 or EDN or any other network you created in "Networks.m" 
 Network=IEEE_34;
 %way= 1 for Total_PLoss or 2 for TVD
 way=2;
@@ -31,13 +31,13 @@ DG_max=2000;
 caps_limit=4000;
 %DGs_limit= maximum limit for the total sizes of the DGS
 DGs_limit=4000;
-%constants for IEEE_34
-if Network.Num==1
-%C3=2;C4=.5;   C1=3; C2=6; 
-C3=2;C4=.5;   C1=.5; C2=.5; 
-end
-% constants for EDN
-if Network.Num==2
-C3=2;C4=.5;   C1=.5; C2=.5;
-end
+% %constants for IEEE_34
+% if Network.Num==1
+% %C3=2;C4=.5;   C1=3; C2=6; 
+% C3=2;C4=.5;   C1=.5; C2=.5; 
+% end
+% % constants for EDN
+% if Network.Num==2
+% C3=2;C4=.5;   C1=.5; C2=.5;
+% end
 AOA(Network,way,Max_iter,solutions_no,N_caps,N_DGs,pf,cap_min,cap_max,DG_min,DG_max,caps_limit,DGs_limit)

@@ -7,7 +7,7 @@ classdef Network
         loads;
         voltages;
         Nb;
-        Num;
+        % Num;
     end
     
     methods
@@ -18,7 +18,7 @@ classdef Network
             obj.loads=loads;
             obj.voltages=voltages;
             obj.Nb=Nb;
-            obj.Num=Num;
+            % obj.Num=Num;
         end
 
     end
