@@ -25,7 +25,8 @@ The simulation results show that the proposed procedure can find the optimal sol
 
 to run the procedure first you need to create a network object of the network you want to optimize in the "Network.m" file
 
-```Network_Name =Network(lines_data,loads_data,voltages_of_buses,Number_of_buses);
+```
+Network_Name =Network(lines_data,loads_data,voltages_of_buses,Number_of_buses);
 
 ```
 
