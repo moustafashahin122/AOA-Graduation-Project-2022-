@@ -12,16 +12,16 @@ The simulation results show that the proposed procedure can find the optimal sol
 
 ## Files
 
-# find them in ./code/AOA_objects/
+## find them in ./code/AOA_objects/
 
 - `BF_gen.m`: Implementation of the backward/forward sweep algorithm
 - `AOA.m`: Implementation of the Archimedes Optimization Algorithm
 - `run.m`: Main program for running the proposed procedure
 - `Networks`: creating objects for the networks we are testing the procedure on.
 
-## Usage
+# Usage
 
-# first step
+## first step
 
 to run the procedure first you need to create a network object of the network you want to optimize in the "Network.m" file
 
@@ -31,13 +31,6 @@ to run the procedure first you need to create a network object of the network yo
 
 please make sure that the columns order is the same as networks IEEE_34 and EDN
 
-# Second Step
+## Second Step
 
 open the " run.m" file and enter the modify the arguments of the call of AOA function and run
-
-To run the procedure, simply run the `main.py` file with the appropriate data file (`34bus.xlsx` or `EDN.xlsx`). The program will output the optimal locations and sizes of DGs and capacitors, as well as the resulting power loss or TVD.
-
-## References
-
-- Archimedes Optimization Algorithm: A Novel Global Optimization Method for Engineering Design, A. Kaveh, H. R. Rostami and S. Talatahari, Advances in Engineering Software, 2014.
-- Power System Analysis and Design, J. Duncan Glover, Mulukutla S. Sarma, Thomas J. Overbye, 6th Edition, 2017.
