@@ -11,6 +11,8 @@ The procedure is tested on two systems: the 34-bus standard radial distribution 
 The simulation results show that the proposed procedure can find the optimal solution for significant minimization in the objective function with more accuracy and efficiency, as compared to other methods. the proposed procedure is shown to be more efficient and accurate.
 
 ## Files
+## find them in ./
+- `master_grad_book.pdf`: the graduation project book contains all the details about the project and its results
 
 ## find them in ./code/AOA_objects/
 
